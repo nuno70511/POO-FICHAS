@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="w3schools-modal.css">
+</head>
+<body>
+    <form id="form">
+        <label for="title">Título do filme: </label>
+        <input type="text" id="title" required><br>
+        <label for="genre">Género: </label>
+        <select id="genre">
+            <option value="adventure" selected>Aventura</option>
+            <option value="action">Ação</option>
+            <option value="comedy">Comédia</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="other">Other</option>
+        </select><br>
+        <label for="year">Ano: </label>
+        <input type="number" id="year" min="1900" required><br>
+        <label for="frontcover">Capa: </label>
+        <input type="text" id="frontcover" required><br>
+        <label for="trailer">Trailer: </label>
+        <input type="text" id="trailer"><br>
+        <button type="submit" value="register" id="btnSubmit">Adicionar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <th>Título</th>
+            <th>Género</th>
+            <th>Opções</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <br>
+    <br>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        </div>
+    </div>
+    <script src="ex7.js"></script>
+</body>
+</html>
